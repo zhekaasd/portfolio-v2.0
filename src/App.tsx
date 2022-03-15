@@ -9,6 +9,11 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Testimonials from "./components/testimonials/Testimonials";
 import Footer from "./components/footer/Footer";
 
+/*
+*   Изменить scss-файлы, до 1:30:00
+* */
+
+
 function App() {
   return (
       <div >
