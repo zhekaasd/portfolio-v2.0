@@ -64,16 +64,17 @@ h1 {
 section {
   margin-top: 8rem;
   //height: 100vh;
-}
 
-section > h2, section > h5 {
-  text-align: center;
-  color: var(--color-light);
-}
+  & > h2, > h5 {
+    text-align: center;
+    color: var(--color-light);
+  }
 
-section > h2 {
-  color: var(--color-bg-primary);
-  margin-bottom: 3rem;
+  & > h2 {
+    color: var(--color-bg-primary);
+    margin-bottom: 3rem;
+  }
+
 }
 
 .text-light {
@@ -83,11 +84,13 @@ section > h2 {
 a {
   color: var(--color-primary);
   transition: var(--transition);
+
+  &:hover {
+    color: var(--color-white);
+  }
 }
 
-a:hover {
-  color: var(--color-white);
-}
+
 
 
 .btn {
@@ -99,13 +102,14 @@ a:hover {
   cursor: pointer;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
+
+  &:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+  }
 }
 
-.btn:hover {
-  background: var(--color-white);
-  color: var(--color-bg);
-  border-color: transparent;
-}
 
 .btn-primary {
   background: var(--color-primary);
