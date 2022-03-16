@@ -1,12 +1,12 @@
-import '../../index.scss';
+//import '../../index.scss';
 import st from './header.module.scss';
-import CTA from './CTA';
+import CTA from './cta/CTA';
 import me from '../../assets/images/25_6678-.png';
-import HeaderSocials from "./HeaderSocials";
+import HeaderSocials from "./header-social/HeaderSocials";
 
 const Header = () => {
     return <header>
-        <div className={st.container}>
+        <div className={`${st.container}`}>
             <h5>Hello I'm</h5>
             <h1>Hajia Bintu</h1>
             <h5 className={st.textLight}>Fullstack developer</h5>

@@ -3,7 +3,7 @@ import {FaAward} from 'react-icons/fa';
 import {FiUsers} from 'react-icons/fi';
 import {VscFolderLibrary} from 'react-icons/vsc';
 
-import './about2.scss';
+import st from './about.module.scss';
 import '../../index.scss';
 
 const About = () => {
@@ -11,35 +11,34 @@ const About = () => {
         <h5>Get To Know</h5>
         <h2>About me</h2>
 
-        <div className={"container aboutContainer"}>
+        <div className={st.aboutContainer}>
 
-            <div className="aboutMe">
-                <div className="aboutMeImage">
+            <div className={st.aboutMe}>
+                <div className={st.aboutMeImage}>
                     <img src={ME} alt="me"/>
                 </div>
             </div>
 
 
+            <div className={st.aboutContent}>
+                <div className={st.aboutCards}>
+                    <article className={st.aboutCard}>
 
-            <div className="aboutContent">
-                <div className="aboutCards">
-                    <article className={'aboutCard'}>
-
-                        <FaAward className={'aboutIcon'} />
+                        <FaAward className={st.aboutIcon}/>
                         <h5>Experience</h5>
                         <small>3+ Years Working</small>
                     </article>
 
-                    <article className={'aboutCard'}>
+                    <article className={st.aboutCard}>
 
-                        <FiUsers className={'aboutIcon'} />
+                        <FiUsers className={st.aboutIcon}/>
                         <h5>Experience</h5>
                         <small>3+ Years Working</small>
                     </article>
 
-                    <article className={'aboutCard'}>
+                    <article className={st.aboutCard}>
 
-                        <VscFolderLibrary className={'aboutIcon'} />
+                        <VscFolderLibrary className={st.aboutIcon}/>
                         <h5>Experience</h5>
                         <small>3+ Years Working</small>
                     </article>
@@ -51,7 +50,7 @@ const About = () => {
                     Deserunt eveniet hic impedit non pariatur repellendus.
                 </p>
 
-                <a href="#contact" className={'btn' + ' ' + 'btn-primary'}>
+                <a href="#contact" className={`${st.btn} ${st.btn}`}>
                     Lat's talk
                 </a>
             </div>

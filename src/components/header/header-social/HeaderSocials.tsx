@@ -3,7 +3,7 @@ import {BsLinkedin} from 'react-icons/bs';
 import {BsFacebook} from 'react-icons/bs';
 import {BsGithub} from 'react-icons/bs';
 
-import st from './header.module.scss';
+import st from './headerSocial.module.scss';
 
 const HeaderSocials = () => {
     return (
